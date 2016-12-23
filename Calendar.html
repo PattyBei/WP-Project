@@ -17,15 +17,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-    $(function () {
-      $('.clickMe').click(function () {
-          var str = $(this).text();
-          $('#loading-content').load('dataSearch.php?' + str, hideLoader);
-          alert("abc");
-      });
-    });
+    <script language ="javascript">
+      function getPaging(id){
+        if (id>=1&&id<=3) {
+          alert(id+"號\n活動名稱 : 康寧茶饗全感空間\n展演地點 : 華山文創園區\n展演日期 : 2016-11-10~2017-01-08\n展演時間 : 13:00~20:00");
+        } else if (id>=4&&id<=10 ) {
+          alert(id+"號\n活動名稱 : 2016 關渡雙年展 打怪\n展演地點 : 國立臺北藝術大學 關渡美術館\n展演日期 : 2016-09-30~2016-12-11\n展演時間 : 10:00~17:00");
+        }else if (id>=11&&id<=17 ) {
+          alert(id+"號\n活動名稱 : 2016臺中花都藝術季─滿城花似錦-花藝裝置大賞\n展演地點 : 臺中市大墩文化中心 大廳左側(前段門廳)\n展演日期 : 2016-09-30~2016-12-11\n展演時間 : 10:00~17:00");
+        }else if (id>=18&&id<=24 ) {
+          alert(id+"號\n活動名稱 : FYE－For Your Earth友善&純淨市集\n展演地點 : 華山文創園區 中4館-A\n展演日期 : 2016-11-04 ~ 2017-01-02\n展演時間 : 11:00 ~ 21:00");
+        }else if (id>=25&&id<=31 ) {
+          alert(id+"號\n活動名稱 : 2016臺南文學季・南方想像\n展演地點 : 臺南市 國立臺灣文學館、楊逵文學紀念館、葉石濤文學紀念館、臺北齊東詩社、南寧文學・家、321巷藝術聚落\n展演日期 : 2016-10-18 ~ 2016-12-31\n展演時間 : 8:00 ~ 20:00");
+        }
+      }
     </script>
+
 </head>
 <style >
 
@@ -33,6 +40,7 @@
         padding: 70px 25px;
         width: 100%;
         background: #1abc9c;
+        margin-top: 100px;
     }
 
     .month ul {
@@ -141,37 +149,37 @@
       <li> </li>
       <li> </li>
       <li> </li>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>10</li>
-      <li>11</li>
-      <li>12</li>
-      <li>13</li>
-      <li>14</li>
-      <li>15</li>
-      <li>16</li>
-      <li>17</li>
-      <li>18</li>
-      <li>19</li>
-      <li onclick="clickMe" id="20"><span class="active">20</span></li>
-      <li>21</li>
-      <li>22</li>
-      <li>23</li>
-      <li>24</li>
-      <li>25</li>
-      <li>26</li>
-      <li>27</li>
-      <li>28</li>
-      <li>29</li>
-      <li>30</li>
-      <li>31</li>
+      <li onclick="getPaging(this.id)" id=1>1</li>
+      <li onclick="getPaging(this.id)" id=2>2</li>
+      <li onclick="getPaging(this.id)" id=3>3</li>
+      <li onclick="getPaging(this.id)" id=4>4</li>
+      <li onclick="getPaging(this.id)" id=5>5</li>
+      <li onclick="getPaging(this.id)" id=6>6</li>
+      <li onclick="getPaging(this.id)" id=7>7</li>
+      <li onclick="getPaging(this.id)" id=8>8</li>
+      <li onclick="getPaging(this.id)" id=9>9</li>
+      <li onclick="getPaging(this.id)" id=10>10</li>
+      <li onclick="getPaging(this.id)" id=11>11</li>
+      <li onclick="getPaging(this.id)" id=12>12</li>
+      <li onclick="getPaging(this.id)" id=13>13</li>
+      <li onclick="getPaging(this.id)" id=14>14</li>
+      <li onclick="getPaging(this.id)" id=15>15</li>
+      <li onclick="getPaging(this.id)" id=16>16</li>
+      <li onclick="getPaging(this.id)" id=17>17</li>
+      <li onclick="getPaging(this.id)" id=18>18</li>
+      <li onclick="getPaging(this.id)" id=19>19</li>
+      <li onclick="getPaging(this.id)" id=20>20</li>
+      <li onclick="getPaging(this.id)" id=21>21</li>
+      <li onclick="getPaging(this.id)" id=22>22</li>
+      <li onclick="getPaging(this.id)" id=23><span class="active">23</span></li>
+      <li onclick="getPaging(this.id)" id=24>24</li>
+      <li onclick="getPaging(this.id)" id=25>25</li>
+      <li onclick="getPaging(this.id)" id=26>26</li>
+      <li onclick="getPaging(this.id)" id=27>27</li>
+      <li onclick="getPaging(this.id)" id=28>28</li>
+      <li onclick="getPaging(this.id)" id=29>29</li>
+      <li onclick="getPaging(this.id)" id=30>30</li>
+      <li onclick="getPaging(this.id)" id=31>31</li>
     </ul>
 
     <p align="center"><strong>聯絡我們</strong><br> 救救大五學長 - 楊政達<br> abc@gmail.com
