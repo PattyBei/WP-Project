@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPlayer</title>
+    <!--navbar-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <!--圖文-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--圓 方 image-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script language ="javascript">
+      function getPaging(id){
+        if (id>=1&&id<=3) {
+          alert(id+"號\n活動名稱 : 康寧茶饗全感空間\n展演地點 : 華山文創園區\n展演日期 : 2016-11-10~2017-01-08\n展演時間 : 13:00~20:00");
+        } else if (id>=4&&id<=10 ) {
+          alert(id+"號\n活動名稱 : 2016 關渡雙年展 打怪\n展演地點 : 國立臺北藝術大學 關渡美術館\n展演日期 : 2016-09-30~2016-12-11\n展演時間 : 10:00~17:00");
+        }else if (id>=11&&id<=17 ) {
+          alert(id+"號\n活動名稱 : 2016臺中花都藝術季─滿城花似錦-花藝裝置大賞\n展演地點 : 臺中市大墩文化中心 大廳左側(前段門廳)\n展演日期 : 2016-09-30~2016-12-11\n展演時間 : 10:00~17:00");
+        }else if (id>=18&&id<=24 ) {
+          alert(id+"號\n活動名稱 : FYE－For Your Earth友善&純淨市集\n展演地點 : 華山文創園區 中4館-A\n展演日期 : 2016-11-04 ~ 2017-01-02\n展演時間 : 11:00 ~ 21:00");
+        }else if (id>=25&&id<=31 ) {
+          alert(id+"號\n活動名稱 : 2016臺南文學季・南方想像\n展演地點 : 臺南市 國立臺灣文學館、楊逵文學紀念館、葉石濤文學紀念館、臺北齊東詩社、南寧文學・家、321巷藝術聚落\n展演日期 : 2016-10-18 ~ 2016-12-31\n展演時間 : 8:00 ~ 20:00");
+        }
+      }
+    </script>
+
+</head>
+<style >
+
+    .month {
+        padding: 70px 25px;
+        width: 100%;
+        background: #1abc9c;
+        margin-top: 100px;
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+
+    .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ddd;
+    }
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+    }
+
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+    }
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+    }
+    .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+    }
+
+
+</style>
+
+<body>
+    <p>
+        <strong><font size="20">&nbspI&nbsp玩&nbsp客</font></strong></p>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><strong>&nbspI&nbsp&nbsp玩&nbsp客</strong></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <!--li class="active"><a href="index.html"><strong>Home</strong></a></li-->
+
+              <li class="a"><a href="index.html"><strong>熱門活動</strong></a></li>
+              <li class="active"><a href="Calendar.html"><strong>行事曆</strong></a></li>
+              <li class="a"><a href="thistime.html"><strong>本期活動</strong></a></li>
+              <li class="a"><a href="buy.html"><strong>套票購買</strong></a></li>
+              <li class="a"><a href="SignIn.html"><strong>會員登入</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="month">
+      <ul style="list-style-type:none">
+        <li class="prev"><</li>
+        <li class="next">></li>
+        <li style="text-align:center">
+          December<br>
+          <span style="font-size:18px">2016</span>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li>Sun</li>
+      <li>Mon</li>
+      <li>Tue</li>
+      <li>Web</li>
+      <li>Thu</li>
+      <li>Fri</li>
+      <li>Sat</li>
+    </ul>
+    <ul class="days">
+      <li> </li>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+      <li onclick="getPaging(this.id)" id=1>1</li>
+      <li onclick="getPaging(this.id)" id=2>2</li>
+      <li onclick="getPaging(this.id)" id=3>3</li>
+      <li onclick="getPaging(this.id)" id=4>4</li>
+      <li onclick="getPaging(this.id)" id=5>5</li>
+      <li onclick="getPaging(this.id)" id=6>6</li>
+      <li onclick="getPaging(this.id)" id=7>7</li>
+      <li onclick="getPaging(this.id)" id=8>8</li>
+      <li onclick="getPaging(this.id)" id=9>9</li>
+      <li onclick="getPaging(this.id)" id=10>10</li>
+      <li onclick="getPaging(this.id)" id=11>11</li>
+      <li onclick="getPaging(this.id)" id=12>12</li>
+      <li onclick="getPaging(this.id)" id=13>13</li>
+      <li onclick="getPaging(this.id)" id=14>14</li>
+      <li onclick="getPaging(this.id)" id=15>15</li>
+      <li onclick="getPaging(this.id)" id=16>16</li>
+      <li onclick="getPaging(this.id)" id=17>17</li>
+      <li onclick="getPaging(this.id)" id=18>18</li>
+      <li onclick="getPaging(this.id)" id=19>19</li>
+      <li onclick="getPaging(this.id)" id=20>20</li>
+      <li onclick="getPaging(this.id)" id=21>21</li>
+      <li onclick="getPaging(this.id)" id=22>22</li>
+      <li onclick="getPaging(this.id)" id=23><span class="active">23</span></li>
+      <li onclick="getPaging(this.id)" id=24>24</li>
+      <li onclick="getPaging(this.id)" id=25>25</li>
+      <li onclick="getPaging(this.id)" id=26>26</li>
+      <li onclick="getPaging(this.id)" id=27>27</li>
+      <li onclick="getPaging(this.id)" id=28>28</li>
+      <li onclick="getPaging(this.id)" id=29>29</li>
+      <li onclick="getPaging(this.id)" id=30>30</li>
+      <li onclick="getPaging(this.id)" id=31>31</li>
+    </ul>
+
+    <p align="center"><strong>聯絡我們</strong><br> 救救大五學長 - 楊政達<br> abc@gmail.com
+        <br> 0912345678</p>
+</body>
+
+</html>
